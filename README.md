@@ -8,7 +8,7 @@ A floating screenshot button for desktop agents and web chat apps. Select a scre
 
 Windows 10/11 x64, .NET Framework 4.8. No Node.js, Python, administrator rights, API keys, or paid service required.
 
-1. Download `AgentChatScreenshotButton-windows-x64.zip` from this repository's **Releases**.
+1. Download [AgentChatScreenshotButton-windows-x64.zip](https://github.com/yujingtao02520-prog/agent-chat-screenshot-button/releases/download/v0.1.0/AgentChatScreenshotButton-windows-x64.zip) from [Releases](https://github.com/yujingtao02520-prog/agent-chat-screenshot-button/releases).
 2. Extract the ZIP (do not run inside the ZIP).
 3. Double-click **Install.cmd**. The app starts and a Start menu shortcut is created.
 

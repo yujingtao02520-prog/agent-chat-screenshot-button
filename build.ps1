@@ -12,7 +12,7 @@ $argsList = @('/nologo', '/target:winexe', '/platform:x64', '/optimize+',
     "$PSScriptRoot\src\AgentSnip.cs")
 & $compiler @argsList
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed.' }
-Copy-Item -LiteralPath "$PSScriptRoot\install.ps1", "$PSScriptRoot\uninstall.ps1", "$PSScriptRoot\Install.cmd", "$PSScriptRoot\README.md", "$PSScriptRoot\LICENSE" -Destination $out
+Copy-Item -LiteralPath "$PSScriptRoot\install.ps1", "$PSScriptRoot\uninstall.ps1", "$PSScriptRoot\Install.cmd", "$PSScriptRoot\README.md", "$PSScriptRoot\LICENSE", "$PSScriptRoot\MANUAL-TESTS.md" -Destination $out
 if ($Test) {
     $process = Start-Process -FilePath "$out\AgentChatScreenshotButton.exe" -ArgumentList '--self-test' -WindowStyle Hidden -Wait -PassThru
     if ($process.ExitCode -ne 0) { throw "Self-test failed: $($process.ExitCode)" }
